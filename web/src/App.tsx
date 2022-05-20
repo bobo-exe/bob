@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { LayoutCustom } from './Layouts/LayoutCustom'
 import { Forms } from './Form/Forms';
 import { FooterNow } from './Layouts/FooterFor';
 import Card_box from './Layouts/Card_box';
+import { useRootStore } from '.';
+import {Local} from './Layouts/Local'
+
 
 const dogsList = [
   {
@@ -46,6 +49,13 @@ const dogsList = [
 
 
 function App() {
+
+   const rootStore = useRootStore()
+
+    useEffect(() => {
+        rootStore.setInitialStorageContents()
+    }, [])
+
   return (
       <>
         <LayoutCustom></LayoutCustom>
@@ -53,6 +63,8 @@ function App() {
         <Card_box  
         Dogs={dogsList}
         />
+        <p className='text_1'>Data from localStorage</p>
+        <Local/>
         <FooterNow></FooterNow>
       </>
   );

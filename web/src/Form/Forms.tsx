@@ -7,10 +7,7 @@ const layout = {
     wrapperCol: { span: 16 },
 };
 
-// const { name, setName} = useState('');
 
-
-/* eslint-disable no-template-curly-in-string */
 const validateMessages = {
     required: '${label} is required!',
     types: {
@@ -21,7 +18,7 @@ const validateMessages = {
         range: '${label} must be between ${min} and ${max}',
     },
 };
-/* eslint-enable no-template-curly-in-string */
+
 
 export const Forms = () => {
     const onFinish = (values: any) => {

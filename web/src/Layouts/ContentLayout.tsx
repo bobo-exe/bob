@@ -2,12 +2,8 @@ import { Card, Col, Row } from 'antd';
 import './ContentLayoutC.css';
 
 
-
-
 export const ContentLayout = ({ title, description}: {title: string, description: string}) => {
      console.log('>>props', title)
-
-
 
     return (
         <>
