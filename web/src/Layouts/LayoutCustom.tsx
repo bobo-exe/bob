@@ -8,28 +8,28 @@ const { Header, Content, Footer } = Layout;
 const Informations = [
     {
         id: 1,
-        title: "This is title number 1",
-        description: "This is description"
+        title: "Number 1",
+        description: "Description"
     },
     {
         id: 2,
-        title: "This is title number 2",
-        description: "This is description"
+        title: "Number 2",
+        description: "Description"
     },
     {
         id: 3,
-        title: "This is title number 3",
-        description: "This is description"
+        title: "Number 3",
+        description: "Description"
     },
     {
         id: 4,
-        title: "This is title number 4",
-        description: "This is description"
+        title: "Number 4",
+        description: "Description"
     },
     {
         id: 5,
-        title: "This is title number 5",
-        description: "This is description"
+        title: "Number 5",
+        description: "Description"
     },
 
 
