@@ -8,28 +8,28 @@ const { Header, Content, Footer } = Layout;
 const Informations = [
     {
         id: 1,
-        title: "Number 1",
-        description: "Description"
+        title: "This is title number 1",
+        description: "This is description"
     },
     {
         id: 2,
-        title: "Number 2",
-        description: "Description"
+        title: "This is title number 2",
+        description: "This is description"
     },
     {
         id: 3,
-        title: "Number 3",
-        description: "Description"
+        title: "This is title number 3",
+        description: "This is description"
     },
     {
         id: 4,
-        title: "Number 4",
-        description: "Description"
+        title: "This is title number 4",
+        description: "This is description"
     },
     {
         id: 5,
-        title: "Number 5",
-        description: "Description"
+        title: "This is title number 5",
+        description: "This is description"
     },
 
 
@@ -60,7 +60,7 @@ export const LayoutCustom = () =>{
                     <div className="site-layout-content">
                         {   Informations.map((el, index) =>{
                             return(
-                                <ContentLayout key={el.id} title={el.title} description={el.description} />
+                                <ContentLayout key={el.id}  />
                             )
                         })
                         }

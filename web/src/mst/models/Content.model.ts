@@ -1,5 +1,5 @@
 import { getParent, getParentOfType, types } from 'mobx-state-tree'
-import RootStore from '../store/RootStore'
+import RootStore from '../stores/RootStore.store'
 
 export const ContentModel = types.model('ContentModel', {
     id: types.identifier,

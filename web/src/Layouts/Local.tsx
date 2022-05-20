@@ -3,9 +3,9 @@ import { Content } from "antd/lib/layout/layout"
 import { observer } from "mobx-react-lite"
 import { useEffect } from "react"
 import { useRootStore } from ".."
-import { IContentModel } from '../interface/mainInterface';
+import { IContentModel } from '../interfaces/mainInterface';
 import { CardCustom } from './CardCustom';
-import { Note } from '../Notes/Notes';
+import { Note } from '../components/CustomForm/Notes/Note';
 
 export const Local = observer(() => {
 

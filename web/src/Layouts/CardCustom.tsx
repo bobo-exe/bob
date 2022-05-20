@@ -2,7 +2,7 @@ import { Button, Checkbox, Input } from 'antd'
 import Card from 'antd/lib/card'
 import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
-import { IContentModel } from '../interface/mainInterface'
+import { IContentModel } from '../interfaces/interfaces'
 
 
 export const CardCustom = observer(({ content }: { content: IContentModel }) => {
@@ -12,6 +12,7 @@ export const CardCustom = observer(({ content }: { content: IContentModel }) => 
 
     useEffect(() => {
         if (isSeen) {
+            // alert(`Is seen ${ title }`)
             console.log('>>title', title)
         }
     }, [ isSeen ])
@@ -26,10 +27,12 @@ export const CardCustom = observer(({ content }: { content: IContentModel }) => 
                 onChange={ (e) => changeNotes(e.target.value) }
             />
 
-            <Checkbox defaultChecked={ seen } checked={ seen } onChange={ (e) => changeSeen(e.target.checked) } />
 
             <Button onClick={ addNote }>Add Note</Button>
             <Button type={ 'primary' } onClick={ removeNote }>Remove Note</Button>
+
+
+            <Checkbox defaultChecked={ seen } checked={ seen } onChange={ (e) => changeSeen(e.target.checked) } />
 
         </Card>
     )

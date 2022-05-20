@@ -1,5 +1,5 @@
 import { List } from 'antd'
-import { IContentModel } from '../interface/mainInterface'
+import { IContentModel } from '../../../interfaces/interfaces'
 
 export const Note = ({ content }: { content: IContentModel }) => {
     return (

@@ -1,6 +1,6 @@
 
-import RootStore from "../mst/store/RootStore"
-import { ContentModel } from "../mst/model/Content.model"
+import RootStore from "../mst/stores/RootStore.store"
+import { ContentModel } from "../mst/models/Content.model"
 import { Instance } from "mobx-state-tree"
 
 interface Animal {
@@ -18,5 +18,5 @@ export interface IRootStore extends Instance<typeof RootStore>{
 }
 
 export interface IContentModel extends Instance<typeof ContentModel>{
-    
+
 }
