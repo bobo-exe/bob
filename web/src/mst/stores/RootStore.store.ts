@@ -1,5 +1,6 @@
-import { applySnapshot, types } from "mobx-state-tree";
-import { ContentModel } from "../model/Content.model";
+import { applySnapshot, types } from 'mobx-state-tree'
+import { IContentModel } from '../../interfaces/interfaces'
+import { ContentModel } from '../models/Content.model'
 
 
 const RootStore = types.model('RootStore', {

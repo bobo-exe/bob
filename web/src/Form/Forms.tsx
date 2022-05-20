@@ -19,7 +19,6 @@ const validateMessages = {
     },
 };
 
-
 export const Forms = () => {
     const onFinish = (values: any) => {
         console.log(values);
@@ -29,16 +28,16 @@ export const Forms = () => {
 
     return (
         <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
-            <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
+            <Form.Item name={['user', 'name']} label="Name and Surname" rules={[{ required: true }]}>
                 <Input />
             </Form.Item>
             <Form.Item name={['user', 'email']} label="Email" rules={[{ type: 'email' }]}>
                 <Input />
             </Form.Item>
-            <Form.Item name={['user', 'age']} label="Age" rules={[{ type: 'number', min: 0, max: 99 }]}>
+            <Form.Item name={['user', 'id']} label="ID" rules={[{ type: 'number', min: 1, max: 999 }]}>
                 <InputNumber />
             </Form.Item>
-            <Form.Item name={['user', 'introduction']} label="Introduction">
+            <Form.Item name={['user', 'details']} label="Details">
                 <Input.TextArea />
             </Form.Item>
             <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
